@@ -5,6 +5,13 @@ body {
     font-family: 'Lato', sans-serif;
     color: #505962;
 }
+/*HELPS WITH THE SPECIAL SCROLL HIGHLIGHT*/
+.offset:before {
+    display: block;
+    content: '';
+    height: 4rem;
+    margin-top: -4rem;
+}
 /*Navigation*/
 .navbar {
     text-transform: uppercase;
@@ -60,37 +67,78 @@ body {
     padding: .6rem 1.3rem;
     font-size: 1.1rem;
 }
+/*Course Section*/
+.narrow {
+    width: 75%;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+}
+narrow h1 {
+    font-size: 2.4rem;
+}
+.btn-secondary {
+    border-width: medium;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: .6rem 1.2rem;
+    margin: 1rem;
+    color: white;
+    background-color: #1EBBA3;
+    border-color: #1EBBA3;
+}
+.btn-secondary:hover {
+    background-color: #189582;
+    border-color: #189582;
+}
+/*Features Section*/
+.jumbotron {
+    margin-bottom: 0;
+    padding: 2rem 0 3.5rem;
+    border-radius: 0;
+}
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: #1EBBA3;
+    margin: 0 auto 2rem;
+}
 
+.feature svg.svg-inline--fa {
+    color: #1EBBA3;
+}
 
+.feature h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: .4rem;
+}
 
-/*!*COURSE SECTION*!*/
-
-/*.narrow {*/
-/*    width: 75%;*/
-/*    margin: 1.5rem auto;*/
-/*    padding-top: 2rem;*/
-/*}*/
-
-/*.narrow h1 {*/
-/*    font-size: 2.4rem;*/
-/*}*/
-/*.btn-secondary {*/
-/*    border-width: medium;*/
-/*    border-radius: 0;*/
-/*    padding: .6rem 1.2rem;*/
-/*    font-size: 1.2rem;*/
-/*    text-transfrom: uppercase;*/
-/*    margin: 1rem;*/
-/*    border-color: #1EBBA3;*/
-/*    background-color: #1EBBA3;*/
-/*    color: white;*/
-/*}*/
-/*.btn-secondary:hover,*/
-/*.btn-secondary:focus{*/
-/*    border-color: #189582;*/
-/*    background-color: #189582;*/
-/*    color: white;*/
-/*}*/
+.feature p {
+    font-size: 1.1rem;
+}
+/*Resources*/
+.dark {
+    background-color: rgba(0, 0, 0, .75);
+    color: white;
+    padding: 7rem 2rem;
+}
+.fixed {
+    background-image: url(img/apple.png);
+    z-index: -1;
+}
+.fixed-background h3 {
+    margin-bottom: 2rem;
+}
+.fixed-background p {
+    margin-top: 1.5rem;
+}
 
 
 
